@@ -1,0 +1,134 @@
+.blog {
+    background: #b07cf7;
+    height: 90vh;
+
+    &-header {
+        text-align: center;
+        padding-top: 90px;
+
+        &__heading {
+            @include font-heading ();
+            text-transform: capitalize;
+        }
+
+        &__text {
+            font-size: 17px;
+            font-family: $ff-l;
+            color: #ffffff;
+            width: 570px;
+            margin: 25px auto;
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &-button {
+        margin-top: 100px;
+        text-align: center;
+
+        &-btn {
+            background: #f72b3b;
+            @include buttonStyle ();
+        }
+    }
+}
+.container__smuzy {
+    background: url(/img/BlogSmuzy.png) no-repeat;
+    height: 315px;
+    width: 370px;
+    box-shadow: inset 0px -100px 64px -2px rgba(8, 9, 9, 0.6);
+}
+.container__sup {
+    background: url(/img/BlogSup.png) no-repeat;
+    height: 315px;
+    width: 370px;
+    box-shadow: inset 0px -100px 64px -2px rgba(8, 9, 9, 0.6);
+}
+.container__raspberries {
+    background: url(/img/BlogRaspberries.png) no-repeat;
+    height: 315px;
+    width: 370px;
+    box-shadow: inset 0px -100px 64px -2px rgba(8, 9, 9, 0.6);
+}
+.container__data {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    font-family: 'Raleway', bold;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-top: 15px;
+    background: #262626;
+    opacity: .7;
+    border-radius: 10%;
+    line-height: .8;
+    text-align: center;
+}
+.container__heading {
+    font-family: $ff-b;
+    color: #ffffff;
+    font-size: 22px;
+    margin-top: 130px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.container__text {
+    color: #ffffff;
+    font-family: $ff-l;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1919px) {
+    .blog {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .blog {
+        height: 180vh;
+
+        &-content {
+            flex-direction: column;
+            height: 120vh;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width : 1023px) {
+    .blog {
+        height: 100%;
+
+        &-header__text {
+            width: 80%;
+        }
+        &-button {
+            padding-bottom: 10%;
+        }
+    }
+}
+
+@media screen and (max-width : 479px) {
+    .blog-header__heading {
+        font-size: 70px;
+    }
+    .container__smuzy,
+    .container__sup,
+    .container__raspberries {
+        width: 240px;
+        height: auto;
+    }
+    .container__heading {
+        margin-top: 90px;
+    }
+    .container__text {
+        margin-bottom: 10px;
+    }
+}

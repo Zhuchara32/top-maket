@@ -1,0 +1,62 @@
+.aboutUs {
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00b2b2;
+
+    &__container-img {
+        margin-left: 10%;
+    }
+
+    &__content {
+        width: 33.333%;
+        margin-right: 11%;
+
+        &__heading {
+            @include font-heading();
+            text-transform: capitalize;
+        }
+        
+        &__text {
+            font-size: 17px;
+            font-family: $ff-l;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 1529px) {
+    .aboutUs {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        &__content {
+            margin: 0 0 2% 0;
+            width: 66%;
+
+            &__heading {
+                text-align: center;
+            }
+        }
+
+        &__container-img {
+            margin: 0;
+        } 
+    }
+
+}
+
+@media screen and (max-width : 639px) {
+    .aboutUs__content__heading {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width : 479px) {
+    .aboutUs__content__heading {
+        font-size: 47px;
+    }
+}

@@ -1,0 +1,14 @@
+@mixin font-heading($fsh: 90px, $ffh: ('Raleway', bold), $color:#ffffff) {
+        font-size: $fsh;
+        font-family: $ffh;
+        color: $color;
+}
+@mixin buttonStyle ($w: 200px) {
+        font-size: 20px;
+        font-family: $ff-l;
+        text-transform: uppercase;
+        color: #ffffff;
+        border: none;
+        width: $w;
+        height: 55px;
+}

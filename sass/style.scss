@@ -1,0 +1,18 @@
+@import 'variable';
+@import 'mixin';
+@import 'reset';
+@import 'freshLife';
+@import 'aboutUs';
+@import 'ourServices';
+@import 'gallery';
+@import 'subscribeToUs';
+@import 'blog';
+@import 'contact';
+@import 'foo';
+
+
+
+
+input[class="contact-content-form__text"]::-webkit-input-placeholder { color: #ffffff; }
+input[class="contact-content-form__email"]::-webkit-input-placeholder { color: #ffffff; }
+input[class="contact-content-form__phone"]::-webkit-input-placeholder { color: #ffffff; }

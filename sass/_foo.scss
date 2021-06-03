@@ -1,0 +1,56 @@
+.foo {
+    background: #262626;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-leftSection {
+        font-size: 16px;
+        height: 20px;
+        font-family: $ff-l;
+        color: #7e7e7e;
+        margin-left: 10%;
+    }
+
+    &-rightSection {
+        font-size: 16px;
+        height: 20px;
+        font-family: $ff-l;
+        color: #7e7e7e;  
+        margin-right: 11%; 
+
+        &-pink {
+            color: #e92a53;
+        }
+    }
+
+    &-mainSection {
+        font-size: 16px;
+        height: 20px;
+        font-family: $ff-b;
+        font-weight: bold;
+        color: #7e7e7e;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .foo-leftSection {
+        margin-left: 0;
+    }
+    .foo-rightSection {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width : 639px) {
+    .foo-leftSection,
+    .foo-rightSection {
+        width: 28vw;
+    }
+}
+
+@media screen and (max-width : 479px) {
+    
+}

@@ -1,0 +1,95 @@
+.gallery {
+    background: #ffe92f;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__content {
+        display: flex;
+        width: 71%;
+        height: 80%;
+        margin: 25px auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-asideBanner {
+            height: 560px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__header {
+        margin-top: 80px;
+
+        &__heading {
+            @include font-heading($color: #262626);
+            text-transform: capitalize;
+            margin-bottom: 25px;
+        }
+
+        &__text {
+            width: 38%;
+            margin: 0 auto;
+            font-size: 17px;
+            font-family: $ff-l;
+        }
+    }
+
+    &__button {
+        @include buttonStyle ();
+        background: #5585a2;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 1919px) {
+    .gallery__content { 
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1529px) {
+    .gallery {
+        justify-content: space-evenly;
+
+        &__content {
+            width: 100vw;
+            flex-direction: column;
+            align-items: space-between;
+            align-content: center;
+
+            &-asideBanner {
+                width: 100vw;
+                height: auto;
+            }
+
+            &-img {
+                width: 70%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 1023px) {
+    .gallery__header__text {
+            width: 80%;
+    }
+}
+
+@media screen and (max-width : 479px) {
+    .gallery {
+        &__header__heading {
+            font-size: 60px;
+        }
+
+        &__header__text {
+            width: 70%;
+        }
+    }
+}

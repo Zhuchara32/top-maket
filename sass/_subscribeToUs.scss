@@ -1,0 +1,62 @@
+.subscribeToUs {
+    background: url(/img/SubscribeToUs.png);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+
+    &-wrapper {
+        margin-left: 10%;
+        margin-top: 200px;
+    }
+
+    &__heading {
+        @include font-heading ($fsh: 40px, $color: #262626);
+        text-transform: capitalize;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        font-size: 17px;
+        font-family: $ff-l;
+        width: 36%;
+        margin-bottom: 50px;
+    }
+
+    &__form__email {
+        width: 40%;
+        height: 55px;
+    }
+
+    &__form__button {
+        @include buttonStyle ($w: 170px);
+        background: #96b92c;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width : 1023px) {
+    .subscribeToUs {
+        height: 100%;
+
+        &-wrapper {
+            margin-bottom: 25%;
+        }
+    }
+}
+
+@media screen and (max-width : 639px) {
+    .subscribeToUs__text {
+            width: 80%;
+        }
+}
+
+@media screen and (max-width : 479px) {
+    .subscribeToUs__heading {
+        font-size: 30px;
+    } 
+    .subscribeToUs__form__email {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,149 @@
+.freshLife__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    width: 79%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 11%;
+
+    &-logo-text {
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: 'Pacifico', Regular;
+    }
+
+    &-nav-button {
+        display: none;
+    }
+}
+
+.nav-panel {
+    width: 730px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none; 
+
+    &__element {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: $ff-b;
+        font-weight: bold;
+
+        &-link {
+            text-decoration: none;
+            color: #262626;
+            &:hover {
+                border-top: 2px solid #ff6033;
+            }
+        }
+    }    
+}
+.freshLife__main {
+    position: relative;
+    top: 0;
+    background: url(/img/top-banner.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    
+    &-content {
+        width: 25%;
+        margin-left: 10%;
+
+        &__heading {
+            font-size: 60px;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-family: 'Raleway', heavy;
+        }
+
+    &__text {
+        font-size: 17px;
+        margin-bottom: 30px;
+        font-family: $ff-l;
+    }
+
+    &__button {
+        @include buttonStyle ();
+        background: #ff6033;
+    }
+    }
+}
+
+@media screen and (max-width : 1023px) {
+    .freshLife__header {
+        align-items: flex-start;
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-items: center;
+
+            &-button {
+                width: 40px;
+                height: 40px;
+                background: #00bcbc;
+                border: none;
+                display: block;
+                cursor: pointer;
+            }
+
+            &-panel {
+                width: 280px;
+                height: 500px;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background: #ff6033;
+                opacity: .9;
+            }
+        }
+    }
+
+    .nav-panel__element {
+        display: block;
+        width: 280px;
+        height: 80px;
+        background: #00bcbc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background: #61e2e2;
+        }
+    }
+
+}
+
+@media screen and (max-width : 767px) {
+    .freshLife__main-content {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width : 639px) {
+    .freshLife__main-content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width : 479px) {
+    .freshLife__header-nav-panel {
+        height: 190px;
+        width: 100px;
+    }
+    .freshLife__main-content {
+        width: 70%;
+    }
+}
