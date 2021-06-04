@@ -5,10 +5,19 @@
 }
 @mixin buttonStyle ($w: 200px) {
         font-size: 20px;
+        height: 55px;
         font-family: $ff-l;
         text-transform: uppercase;
         color: #ffffff;
         border: none;
         width: $w;
-        height: 55px;
+        cursor: pointer;
+
+        &:hover {
+                opacity: 0.9;
+        }
+
+        &:active {
+                background: #262626;
+        }
 }

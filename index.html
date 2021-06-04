@@ -26,11 +26,14 @@
                     <button class="freshLife__header-nav-button"><i class="fas fa-bars"></i></button>
                     <ul class="freshLife__header-nav-panel nav-panel">
                         <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">home</a></li>
-                        <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">about</a></li>
-                        <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">services</a></li>
-                        <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">gallery</a></li>
-                        <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">blog</a></li>
-                        <li class="nav-panel__element"><a href="#" class="nav-panel__element-link">contact</a></li>
+                        <li class="nav-panel__element"><a href="#aboutUs" class="nav-panel__element-link">about</a></li>
+                        <li class="nav-panel__element"><a href="#ourServices"
+                                class="nav-panel__element-link">services</a></li>
+                        <li class="nav-panel__element"><a href="#gallery" class="nav-panel__element-link">gallery</a>
+                        </li>
+                        <li class="nav-panel__element"><a href="#blog" class="nav-panel__element-link">blog</a></li>
+                        <li class="nav-panel__element"><a href="#contact" class="nav-panel__element-link">contact</a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -46,7 +49,7 @@
                 </div>
             </main>
         </section>
-        <section class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
             <div class="aboutUs__container-img">
                 <img src="./img/raspberries.png" alt="raspberries" width="100%">
             </div>
@@ -61,7 +64,7 @@
                     doloremque laudantium, totam rem aperiam eaque ipsa quae ab illo invertore.</p>
             </article>
         </section>
-        <section class="ourServices">
+        <section class="ourServices" id="ourServices">
             <div class="ourServices__scroll">
                 <div class="ourServices__scroll-service scroll-service">
                     <div class="ourServices__scroll-service__text scroll-service__text">
@@ -98,15 +101,15 @@
                 </div>
             </div>
             <div class="ourServices__content">
-                <div class="ourServices__content-img">
+                <!-- <div class="ourServices__content-img">
                     <img src="./img/tomato.png" alt="tomato" width="100%">
                 </div>
-                <div class="ourServices__content-text">
-                    <h2 class="ourServices__content-heading">our services</h2>
-                </div>
+                <div class="ourServices__content-text"> -->
+                <h2 class="ourServices__content-heading">our services</h2>
+                <!-- </div> -->
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <header class="gallery__header">
                 <h2 class="gallery__header__heading">gallery</h2>
                 <p class="gallery__header__text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -150,7 +153,7 @@
                 </form>
             </div>
         </section>
-        <section class="blog">
+        <section class="blog" id="blog">
             <header class="blog-header">
                 <h2 class="blog-header__heading">blog</h2>
                 <p class="blog-header__text">Dolore aliqua. Ut anim ad minim veniam, quix nostrud exercitation ullamco
@@ -178,7 +181,7 @@
                 <button class="blog-button-btn">view more</button>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-header">
                 <h2 class="contact-header__heading">contact</h2>
                 <p class="contact-header__text">For new projects, ideas, business or anything youd like to discuss,
@@ -186,9 +189,9 @@
             </div>
             <div class="contact-content">
                 <form class="contact-content-form">
-                    <input class="contact-content-form__button" type="submit" value="auskteez tran">
-                    <input class="contact-content-form__email" type="email" name="email" placeholder="Your email...">
-                    <input class="contact-content-form__phone" type="tel" name="phone number"
+                    <input class="contact-content-form__data" type="text" name="your name" placeholder="Auskteez Tran">
+                    <input class="contact-content-form__data" type="email" name="email" placeholder="Your email...">
+                    <input class="contact-content-form__data" type="tel" name="phone number"
                         placeholder="Your prone number...">
                     <input class="contact-content-form__text" type="text" name="text messsge"
                         placeholder="Your messge...">

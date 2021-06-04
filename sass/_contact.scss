@@ -40,39 +40,34 @@
     }
 }
 
-.contact-content-form__button {
+.contact-content-form__data {
     background: #00c4c4;
-    border: none;
-    width: 500px;
-    height: 50px;
-    text-indent: 10px;
-    text-align: left;
-    cursor: pointer;
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 15px;
-    font-family: $ff-b;
-    font-weight: bold;
-}
-
-.contact-content-form__email, .contact-content-form__phone {
-    background: #00c4c4;
+    opacity: .6;
     border: none;
     text-indent: 10px;
     width: 500px;
     height: 50px;
     font-size: 15px;
     font-family: $ff-l;
+
+    &:focus {
+        opacity: 1;
+    }
 }
 
 .contact-content-form__text {
     background: #00c4c4;
+    opacity: .6;
     border: none;
     text-indent: 10px;
     width: 500px;
     height: 250px;
     font-size: 15px;
     font-family: $ff-l;
+
+    &:focus {
+        opacity: 1;
+    }
 }
 .contact-content-info__data {
     font-family: $ff-b;
@@ -123,9 +118,7 @@
 
 @media screen and (max-width : 639px) {
     .contact-content-form, 
-    .contact-content-form__button, 
-    .contact-content-form__email, 
-    .contact-content-form__phone, 
+    .contact-content-form__data, 
     .contact-content-form__text{
         width: 350px;
     }
@@ -139,9 +132,7 @@
         width: 80%;
     }
     .contact-content-form, 
-    .contact-content-form__button, 
-    .contact-content-form__email, 
-    .contact-content-form__phone, 
+    .contact-content-form__data, 
     .contact-content-form__text{
         width: 270px;
     }
