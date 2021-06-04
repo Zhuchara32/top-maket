@@ -53,7 +53,7 @@
 .freshLife__main {
   position: relative;
   top: 0;
-  background: url(./img/top-banner.png) no-repeat;
+  background: url(/img/top-banner.png) no-repeat;
   background-position: center top;
   background-size: cover;
   height: 100vh;
