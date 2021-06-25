@@ -235,7 +235,7 @@
 }
 
 .ourServices__content {
-  background: url(/img/tomato.png) no-repeat;
+  background: url(../img/tomato.png) no-repeat;
   background-position: center center;
   background-size: contain;
   height: 75%;
